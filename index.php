@@ -7,10 +7,14 @@
   <body>
     <p>
 <?php
-  $incr = 1;
-  while($incr <= 10){
+/*Utilisation de la boucle for
+1 - Définition de la variable avec une valeur
+2 - condition
+3 - Incrémentation à la moitié de sa valeur
+ex : 1 - 1.5 - 2.25...*/
+  for($incr = 1;$incr <= 10; $incr += $incr/2){
+    /*Affichage*/
     echo $incr . '<br />';
-    $incr += $incr/2;
   }
 ?>
     </p>
